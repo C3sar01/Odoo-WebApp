@@ -1,0 +1,116 @@
+<odoo>
+    <data>
+         <!-- Listado de ventas -->
+        <record model="ir.ui.view" id="venta.boleta_list">
+            <field name="name">Boleta</field>
+            <field name="model">venta.boleta</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="fecha"/>
+                    <field name="subtotal"/>
+                    <field name="descuento"/>
+                    <field name="total"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Formulario de ventas -->
+        <record id="venta.boleta_view" model="ir.ui.view">
+                    <field name="name">Boleta</field>
+                    <field name="model">venta.boleta</field>
+                    <field name="arch" type="xml">
+                        <form string= "Boleta">
+                        <sheet> 
+                            <group col="4"> 
+                                <field name="fecha"/>
+                                <field name="subtotal"/>
+                            </group>
+                            <group>
+                                <field name="descuento"/>
+                                <field name="total"/>
+                            </group>
+                        </sheet>      
+                        </form> 
+                    </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="venta.boleta_action_window">
+            <field name="name">Boleta</field>
+            <field name="res_model">venta.boleta</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.server" id="venta.boleta_action_server">
+            <field name="name">Boleta server</field>
+            <field name="model_id" ref="model_venta_boleta"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree,form",
+                "res_model": self._name,
+                }
+            </field>
+        </record>
+
+         <!-- Lista de detalle de venta-->
+        <record model="ir.ui.view" id="venta.detalle_boleta_list">
+            <field name="name">Detalle de venta</field>
+            <field name="model">venta.detalle_boleta</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="cantidad"/>
+                    <field name="precio"/>
+                    <field name="descuento"/>
+                    <field name="total"/>
+                </tree>
+            </field>
+        </record>
+
+         <!-- Formulario de detalle de venta -->
+        <record id="venta.boleta_view" model="ir.ui.view">
+                    <field name="name">Detalle de venta</field>
+                    <field name="model">venta.detalle_boleta</field>
+                    <field name="arch" type="xml">
+                        <form string= "Detalle de venta">
+                            <sheet> 
+                                <group> 
+                                    <field name="boleta_id"/>
+                                    <field name="cantidad" sum="Total"/>
+                                    <field name="precio"/>
+                                    <field name="descuento"/>
+                                </group>
+                            </sheet>      
+                        </form> 
+                    </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="venta.detalle_boleta_action_window">
+            <field name="name">Detalle de venta</field>
+            <field name="res_model">venta.detalle_boleta</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- server action to the one above -->
+        <record model="ir.actions.server" id="venta.detalle_boleta_action_server">
+            <field name="name">detalle server</field>
+            <field name="model_id" ref="model_venta_boleta"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree,form",
+                "res_model": self._name,
+                }
+            </field>
+        </record>       
+
+
+
+        <menuitem name="Venta" id="venta.menu_root"/>  
+        <menuitem name="Ventas" id="venta.menu_boleta" parent="venta.menu_root" action="venta.boleta_action_window"/>
+
+
+    </data>
+</odoo>

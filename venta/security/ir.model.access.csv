@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_venta_boleta,venta.boleta,model_venta_boleta,,1,1,1,1
+access_venta_detalle_boleta,venta.detalle_boleta,model_venta_detalle_boleta,,1,1,1,1
