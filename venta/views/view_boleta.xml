@@ -2,42 +2,41 @@
     <data>
          <!-- Listado de ventas -->
         <record model="ir.ui.view" id="venta.boleta_list">
-            <field name="name">Boleta</field>
+            <field name="name">Venta</field>
             <field name="model">venta.boleta</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="local"/>
                     <field name="fecha"/>
-                    <field name="descuento"/>
                 </tree>
             </field>
         </record>
 
-        <!-- Formulario de ventas -->
+        <!-- Formulario de ventas --> 
         <record id="venta.boleta_view" model="ir.ui.view">
-                    <field name="name">Boleta</field>
+                    <field name="name">Venta</field>
                     <field name="model">venta.boleta</field>
                     <field name="arch" type="xml">
-                        <form string= "Boleta">
+                        <form string= "Venta">
                         <sheet> 
-                            <group col="4"> 
+                            <Separator string= "General"/>
+                            <group> 
+                                <field name="local"/>
                                 <field name="fecha"/>
-                            </group>
-                            <group>
-                                <field name="descuento"/>
                             </group>
                         </sheet>      
                         </form> 
                     </field>
         </record>
-
+        
         <record model="ir.actions.act_window" id="venta.boleta_action_window">
-            <field name="name">Boleta</field>
+            <field name="name">Venta</field>
             <field name="res_model">venta.boleta</field>
             <field name="view_mode">tree,form</field>
         </record>
 
         <record model="ir.actions.server" id="venta.boleta_action_server">
-            <field name="name">Boleta server</field>
+            <field name="name">Venta server</field>
             <field name="model_id" ref="model_venta_boleta"/>
             <field name="state">code</field>
             <field name="code">
@@ -58,6 +57,7 @@
                     <field name="cantidad"/>
                     <field name="precio"/>
                     <field name="descuento"/>
+                    <field name="sub_total"/>
                 </tree>
             </field>
         </record>
@@ -68,11 +68,12 @@
                     <field name="model">venta.detalle_boleta</field>
                     <field name="arch" type="xml">
                         <form string= "Detalle de venta">
-                            <sheet> 
+                            <sheet>
                                 <group> 
-                                    <field name="boleta_id"/>
-                                    <field name="cantidad" sum="Total"/>
+                                    <field name="cantidad"/>
                                     <field name="precio"/>
+                                    <field name="descuento"/>
+                                    <field name="sub_total"/>
                                 </group>
                             </sheet>      
                         </form> 
