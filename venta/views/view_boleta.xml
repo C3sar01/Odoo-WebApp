@@ -7,9 +7,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="fecha"/>
-                    <field name="subtotal"/>
                     <field name="descuento"/>
-                    <field name="total"/>
                 </tree>
             </field>
         </record>
@@ -23,11 +21,9 @@
                         <sheet> 
                             <group col="4"> 
                                 <field name="fecha"/>
-                                <field name="subtotal"/>
                             </group>
                             <group>
                                 <field name="descuento"/>
-                                <field name="total"/>
                             </group>
                         </sheet>      
                         </form> 
@@ -62,7 +58,6 @@
                     <field name="cantidad"/>
                     <field name="precio"/>
                     <field name="descuento"/>
-                    <field name="total"/>
                 </tree>
             </field>
         </record>
@@ -78,7 +73,6 @@
                                     <field name="boleta_id"/>
                                     <field name="cantidad" sum="Total"/>
                                     <field name="precio"/>
-                                    <field name="descuento"/>
                                 </group>
                             </sheet>      
                         </form> 
