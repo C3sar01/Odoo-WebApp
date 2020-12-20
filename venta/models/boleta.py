@@ -13,6 +13,7 @@ class Boleta(models.Model):
 
 class DetalleBoleta(models.Model):
     _name = 'venta.detalle_boleta'
+    
     cantidad = fields.Integer(default=1)
     precio = fields.Integer()
     descuento= fields.Integer(default=0)
