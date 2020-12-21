@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <!--  -->
+<<<<<<< HEAD
+        <!--   <record id="object0" model="seguros.seguros"> -->
+=======
+        <!--   <record id="object0" model="venta.venta"> -->
+>>>>>>> 06ee99faf4bc7dbd430745f3c499a92a6cbe87d0
+        <!--     <field name="name">Object 0</field> -->
+        <!--     <field name="value">0</field> -->
+        <!--   </record> -->
+        <!--  -->
+<<<<<<< HEAD
+        <!--   <record id="object1" model="seguros.seguros"> -->
+=======
+        <!--   <record id="object1" model="venta.venta"> -->
+>>>>>>> 06ee99faf4bc7dbd430745f3c499a92a6cbe87d0
+        <!--     <field name="name">Object 1</field> -->
+        <!--     <field name="value">10</field> -->
+        <!--   </record> -->
+        <!--  -->
+<<<<<<< HEAD
+        <!--   <record id="object2" model="seguros.seguros"> -->
+=======
+        <!--   <record id="object2" model="venta.venta"> -->
+>>>>>>> 06ee99faf4bc7dbd430745f3c499a92a6cbe87d0
+        <!--     <field name="name">Object 2</field> -->
+        <!--     <field name="value">20</field> -->
+        <!--   </record> -->
+        <!--  -->
+<<<<<<< HEAD
+        <!--   <record id="object3" model="seguros.seguros"> -->
+=======
+        <!--   <record id="object3" model="venta.venta"> -->
+>>>>>>> 06ee99faf4bc7dbd430745f3c499a92a6cbe87d0
+        <!--     <field name="name">Object 3</field> -->
+        <!--     <field name="value">30</field> -->
+        <!--   </record> -->
+        <!--  -->
+<<<<<<< HEAD
+        <!--   <record id="object4" model="seguros.seguros"> -->
+=======
+        <!--   <record id="object4" model="venta.venta"> -->
+>>>>>>> 06ee99faf4bc7dbd430745f3c499a92a6cbe87d0
+        <!--     <field name="name">Object 4</field> -->
+        <!--     <field name="value">40</field> -->
+        <!--   </record> -->
+        <!--  -->
+    </data>
+</odoo>

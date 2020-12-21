@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_inventario_producto ,inventario.producto,model_inventario_producto,,1,1,1,1
+access_inventario_categoria_producto,inventario.categoria_producto,model_inventario_categoria_producto,,1,1,1,1
+
