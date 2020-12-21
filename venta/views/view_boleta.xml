@@ -6,8 +6,11 @@
             <field name="model">venta.boleta</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="local"/>
                     <field name="fecha"/>
+                    <field name="sucursal"/>
+                    <field name="direccion"/>
+                    <field name="caja"/>
+                    <field name="cajero"/>
                 </tree>
             </field>
         </record>
@@ -21,8 +24,11 @@
                         <sheet> 
                             <Separator string= "General"/>
                             <group> 
-                                <field name="local"/>
                                 <field name="fecha"/>
+                                <field name="sucursal"/>
+                                <field name="direccion"/>
+                                <field name="caja"/>
+                                <field name="cajero"/>
                             </group>
                         </sheet>      
                         </form> 
@@ -54,10 +60,11 @@
             <field name="model">venta.detalle_boleta</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="producto"/>
                     <field name="cantidad"/>
-                    <field name="precio"/>
+                    <field name="precio_unitario"/>
                     <field name="descuento"/>
-                    <field name="sub_total"/>
+                    <field name="sub_total" sum="Total de la venta"/>
                 </tree>
             </field>
         </record>
@@ -70,10 +77,11 @@
                         <form string= "Detalle de venta">
                             <sheet>
                                 <group> 
+                                    <field name="producto"/>
                                     <field name="cantidad"/>
-                                    <field name="precio"/>
+                                    <field name="precio_unitario"/>
                                     <field name="descuento"/>
-                                    <field name="sub_total"/>
+                                    <field name="sub_total" sum="Total de la venta"/>
                                 </group>
                             </sheet>      
                         </form> 
