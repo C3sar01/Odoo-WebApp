@@ -33,3 +33,4 @@ class CategoriaProducto(models.Model):
     def _total_productos(self):
         self.total_productos = len(self.poliza_ids)
 
+
