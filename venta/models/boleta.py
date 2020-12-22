@@ -2,17 +2,22 @@
 
 from odoo import models, fields, api
 
+#Modelo de la clase boleta
+
 class Boleta(models.Model):
      _name = 'venta.boleta'
 
+     cliente= fields.Char(string="Nombre del cliente", required=True)
      fecha= fields.Date()
      sucursal= fields.Char (string="Sucursal", required=True)
      direccion= fields.Char(string="Dirección", required=True)
      caja=fields.Integer(string="Caja")
-     cajero= fields.Char (string="Cajero", required=True)
+     vendedor= fields.Char (string="Vendedor", required=True)
  
      detalle_boleta_ids = fields.One2many(
          'venta.detalle_boleta', 'boleta_id', string="Detalle de la venta")
+
+#Modelo de la clase detalle_boleta
 
 class DetalleBoleta(models.Model):
     _name = 'venta.detalle_boleta'

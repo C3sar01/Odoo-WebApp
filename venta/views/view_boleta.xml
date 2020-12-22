@@ -6,11 +6,12 @@
             <field name="model">venta.boleta</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="cliente"/>
                     <field name="fecha"/>
                     <field name="sucursal"/>
                     <field name="direccion"/>
                     <field name="caja"/>
-                    <field name="cajero"/>
+                    <field name="vendedor"/>
                 </tree>
             </field>
         </record>
@@ -24,11 +25,12 @@
                         <sheet> 
                             <Separator string= "General"/>
                             <group> 
+                                <field name="cliente"/>
                                 <field name="fecha"/>
                                 <field name="sucursal"/>
                                 <field name="direccion"/>
                                 <field name="caja"/>
-                                <field name="cajero"/>
+                                <field name="vendedor"/>
                             </group>
                         </sheet>      
                         </form> 
