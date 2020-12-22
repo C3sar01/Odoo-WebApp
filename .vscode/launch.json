@@ -23,7 +23,9 @@
         "-d",
         "Inventary",
         "-u",
-        "inventario"
+        "inventario",
+        "-u",
+        "ventas"
         
       ]
     }
