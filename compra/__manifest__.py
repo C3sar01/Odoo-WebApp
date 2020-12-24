@@ -3,14 +3,14 @@
     'name': "compra",
 
     'summary': """
-        Proyecto desarrollo web""",
+        Módulo de compras""",
 
     'description': """
         Sistema que permite realizar compras  y emitir órdenes para la reposición del inventario, 
         además de permitir mostrar la cantidad a comprar, el costo y el nombre de cada producto.
     """,
 
-    'author': "Utalca",
+    'author': "Bastián Cáceres",
     'website': "http://www.utalca.cl",
 
     # Categories can be used to filter modules in modules listing
@@ -28,7 +28,5 @@
          'views/view_purchase.xml',
         #'views/templates.xml',
     ],
-    # only loaded in demonstration mode
-  
-    
+        
 }
