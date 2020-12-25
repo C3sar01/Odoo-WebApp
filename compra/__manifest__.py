@@ -3,7 +3,7 @@
     'name': "compra",
 
     'summary': """
-        Módulo de compras""",
+        Modulo de compras""",
 
     'description': """
         Sistema que permite realizar compras  y emitir órdenes para la reposición del inventario, 
@@ -20,13 +20,16 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'inventario'],
 
     # always loaded
     'data': [
-         'security/ir.model.access.csv',
-         'views/view_purchase.xml',
+        'security/ir.model.access.csv',
+        'views/view_compras.xml',
         #'views/templates.xml',
     ],
-        
+    # only loaded in demonstration mode
+    'demo': [
+        'demo/demo.xml',
+    ],
 }

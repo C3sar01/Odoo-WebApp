@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_compra_purchase,compra_purchase,model_compra_purchase,,1,1,1,1
+access_compra_compras,compra.compras,model_compra_compras,,1,1,1,1
+access_compra_detalle,compra.detalle,model_compra_detalle,,1,1,1,1
