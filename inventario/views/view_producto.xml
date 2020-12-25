@@ -7,9 +7,9 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="duration"/>
                     <field name="price"/>
                     <field name="currency_id"/>
+                    <field name="existencia"/>
                     <field name="date_contract"/>
                     <field name="categorias_id"/>
                     <field name="active" />
@@ -27,11 +27,11 @@
                     <sheet>
                         <group col = "4">
                             <field name="name" />
-                            <field name="duration" />
                         </group>
                         <group>
                             <field name="price" />
                             <field name="currency_id"/>
+                            <field name="existencia"/>
                             <field name="date_contract" />
                             <field name="categorias_id" />
                             <field name="active" />
