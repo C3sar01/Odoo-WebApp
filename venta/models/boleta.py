@@ -26,7 +26,7 @@ class DetalleBoleta(models.Model):
     cantidad = fields.Integer(default=1)
     precio_unitario = fields.Integer()
     descuento= fields.Integer(default=0)
-    sub_total = fields.Integer(String="Sub Total", compute="_sub_total")sub_total = fields.Integer(String="Sub Total", compute="_sub_total")
+    sub_total = fields.Integer(String="Sub Total", compute="_sub_total")
     total = fields.Integer(String="Sub Total", compute="_total")
     boleta_id= fields.Many2one('venta.boleta', String="Boleta")
 
