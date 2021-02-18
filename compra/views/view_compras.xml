@@ -23,6 +23,7 @@
                         <sheet> 
                             <Separator string= "General"/>
                             <group> 
+                                <field name="nombre del articulo"/>
                                 <field name="fecha_compra"/>
                                 <field name="sucursal"/>
                                 <field name="direccion"/>
