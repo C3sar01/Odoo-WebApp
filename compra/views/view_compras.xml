@@ -6,7 +6,7 @@
             <field name="model">compra.compras</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="nombre del articulo"/>
+                    
                     <field name="fecha_compra"/>
                     <field name="sucursal"/>
                     <field name="direccion"/>
