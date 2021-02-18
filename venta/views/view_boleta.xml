@@ -65,7 +65,6 @@
                     <field name="producto_id"/>
                     <field name="cantidad"/>
                     <field name="precio_unitario"/>
-                    <field name="descuento"/>
                     <field name="sub_total" sum="Total de la venta"/>
                 </tree>
             </field>
