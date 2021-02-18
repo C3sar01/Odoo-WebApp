@@ -6,7 +6,7 @@
             <field name="model">compra.compras</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="Nombre artículo"/>
+                    <field name="nombre del articulo"/>
                     <field name="fecha_compra"/>
                     <field name="sucursal"/>
                     <field name="direccion"/>
@@ -23,7 +23,6 @@
                         <sheet> 
                             <Separator string= "General"/>
                             <group> 
-                                <field name="Nombre artículo"/>
                                 <field name="fecha_compra"/>
                                 <field name="sucursal"/>
                                 <field name="direccion"/>
