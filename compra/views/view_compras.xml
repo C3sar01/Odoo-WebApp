@@ -6,7 +6,7 @@
             <field name="model">compra.compras</field>
             <field name="arch" type="xml">
                 <tree>
-                    
+                    <field name="proveedor"/>
                     <field name="fecha_compra"/>
                     <field name="sucursal"/>
                     <field name="direccion"/>
@@ -23,7 +23,7 @@
                         <sheet> 
                             <Separator string= "General"/>
                             <group> 
-                                <field name="nombre del articulo"/>
+                                <field name="proveedor"/>
                                 <field name="fecha_compra"/>
                                 <field name="sucursal"/>
                                 <field name="direccion"/>
@@ -61,7 +61,6 @@
                     <field name="producto_id"/>
                     <field name="cantidad"/>
                     <field name="precio_unitario"/>
-                    <field name="descuento"/>
                     <field name="sub_total" sum="Total de la venta"/>
                 </tree>
             </field>
@@ -78,7 +77,6 @@
                                     <field name="producto_id"/>
                                     <field name="cantidad"/>
                                     <field name="precio_unitario"/>
-                                    <field name="descuento"/>
                                     <field name="sub_total" sum="Total de la compra"/>
                                 </group>
                             </sheet>      
