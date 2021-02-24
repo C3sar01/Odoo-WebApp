@@ -10,7 +10,7 @@
                     <field name="price"/>
                     <field name="currency_id"/>
                     <field name="existencia"/>
-                    <field name="description"/>
+                    <field name="date_contract"/>
                     <field name="categorias_id"/>
                     <field name="active" />
                 </tree>
@@ -32,7 +32,7 @@
                             <field name="price" />
                             <field name="currency_id"/>
                             <field name="existencia"/>
-                            <field name="description" />
+                            <field name="date_contract" />
                             <field name="categorias_id" />
                             <field name="active" />
                         </group>

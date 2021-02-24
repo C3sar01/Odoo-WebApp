@@ -15,7 +15,7 @@ class Producto(models.Model):
     
     price = fields.Monetary('Precio', 'currency_id')
     currency_id = fields.Many2one('res.currency')
-    description = fields.Char(string = "Descripción")
+    date_contract = fields.Char(string = "Descripción")
     existencia = fields.Integer(compute='_calculo_stock')
     active = fields.Boolean('Disponibilidad', default=True)
     categorias_id = fields.Many2one('inventario.categoria_producto', string="Categoría")
