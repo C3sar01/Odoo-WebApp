@@ -9,6 +9,8 @@ class Boleta(models.Model):
 
      cliente= fields.Char(string="Nombre del cliente", required=True)
      fecha= fields.Date()
+     sucursal= fields.Char (string="Sucursal", required=True)
+     direccion= fields.Char(string="Dirección", required=True)
      vendedor= fields.Char (string="Vendedor", required=True)
  
      detalle_boleta_ids = fields.One2many(

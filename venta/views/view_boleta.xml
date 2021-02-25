@@ -8,6 +8,9 @@
                 <tree>
                     <field name="cliente"/>
                     <field name="fecha"/>
+                    <field name="sucursal"/>
+                    <field name="direccion"/>
+                    <field name="caja"/>
                     <field name="vendedor"/>
                     
                     
@@ -27,6 +30,9 @@
                             <group> 
                                 <field name="cliente"/>
                                 <field name="fecha"/>
+                                <field name="sucursal"/>
+                                <field name="direccion"/>
+                                <field name="caja"/>
                                 <field name="vendedor"/>
                                 
                                 
