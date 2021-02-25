@@ -7,7 +7,7 @@ from odoo import models, fields, api
 class Boleta(models.Model):
      _name = 'venta.boleta'
 
-     cliente= fields.Char(string="Nombre del cliente", required=True)
+     cliente= fields.Char(string="Nombre del producto", required=True)
      fecha= fields.Date()
      vendedor= fields.Char (string="Vendedor", required=True)
  
