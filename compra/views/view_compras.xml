@@ -6,10 +6,10 @@
             <field name="model">compra.compras</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="proveedor"/>
+                    
                     <field name="fecha_compra"/>
                     
-                    <field name="direccion"/>
+                    
                 </tree>
             </field>
         </record>
@@ -23,10 +23,10 @@
                         <sheet> 
                             <Separator string= "General"/>
                             <group> 
-                                <field name="proveedor"/>
+                                
                                 <field name="fecha_compra"/>
                                 
-                                <field name="direccion"/>
+                                
                             </group>
                         </sheet>      
                         </form> 
