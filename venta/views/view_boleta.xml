@@ -8,9 +8,6 @@
                 <tree>
                     <field name="cliente"/>
                     <field name="fecha"/>
-                    
-                    
-                    <field name="caja"/>
                     <field name="vendedor"/>
                     
                     
@@ -29,10 +26,7 @@
                             <Separator string= "General"/>
                             <group> 
                                 <field name="cliente"/>
-                                <field name="fecha"/>
-                                
-                                
-                                <field name="caja"/>
+                                <field name="fecha"/> 
                                 <field name="vendedor"/>
                                 
                                 

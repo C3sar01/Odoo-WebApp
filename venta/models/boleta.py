@@ -9,8 +9,6 @@ class Boleta(models.Model):
 
      cliente= fields.Char(string="Nombre del cliente", required=True)
      fecha= fields.Date()
-     
-     
      vendedor= fields.Char (string="Vendedor", required=True)
  
      detalle_boleta_ids = fields.One2many(
