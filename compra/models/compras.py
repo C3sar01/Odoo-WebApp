@@ -5,7 +5,7 @@ class Compra(models.Model):
     _name = 'compra.compras'
     proveedor= fields.Char(string="Nombre del artículo", required=True)
     fecha_compra= fields.Date()
-    sucursal= fields.Char (string="Sucursal", required=True)
+    
     direccion= fields.Char(string="Dirección", required=True)
 
     detalle_compra_ids = fields.One2many(

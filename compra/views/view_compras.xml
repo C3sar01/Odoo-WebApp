@@ -8,7 +8,7 @@
                 <tree>
                     <field name="proveedor"/>
                     <field name="fecha_compra"/>
-                    <field name="sucursal"/>
+                    
                     <field name="direccion"/>
                 </tree>
             </field>
@@ -25,7 +25,7 @@
                             <group> 
                                 <field name="proveedor"/>
                                 <field name="fecha_compra"/>
-                                <field name="sucursal"/>
+                                
                                 <field name="direccion"/>
                             </group>
                         </sheet>      
