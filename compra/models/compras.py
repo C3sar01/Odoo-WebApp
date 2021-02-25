@@ -3,7 +3,11 @@
 from odoo import models, fields, api
 class Compra(models.Model):
     _name = 'compra.compras'
+    proveedor= fields.Char(string="Nombre del artículo", required=True)
     fecha_compra= fields.Date()
+    
+    
+
     detalle_compra_ids = fields.One2many(
          'compra.detalle', 'compras_id', string="Detalle de la compra")
 
