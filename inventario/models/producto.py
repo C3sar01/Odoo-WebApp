@@ -14,6 +14,7 @@ class Producto(models.Model):
     #calculo_stock = fields.Integer(string = "Stock", compute =  "_calculo_stock")
     
     price = fields.Monetary('Precio', 'currency_id')
+    description = fields.Char(string="Descripcion", required=True)
     currency_id = fields.Many2one('res.currency')
     date_contract = fields.Char(string = "Descripción")
     existencia = fields.Integer(compute='_calculo_stock')
