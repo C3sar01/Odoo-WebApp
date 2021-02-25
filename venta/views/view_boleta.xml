@@ -9,7 +9,7 @@
                     <field name="cliente"/>
                     <field name="fecha"/>
                     
-                    <field name="direccion"/>
+                    
                     <field name="caja"/>
                     <field name="vendedor"/>
                     
@@ -31,7 +31,7 @@
                                 <field name="cliente"/>
                                 <field name="fecha"/>
                                 
-                                <field name="direccion"/>
+                                
                                 <field name="caja"/>
                                 <field name="vendedor"/>
                                 
