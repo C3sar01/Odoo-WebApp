@@ -8,10 +8,10 @@
                 <tree>
                     <field name="cliente"/>
                     <field name="fecha"/>
-                    <field name="sucursal"/>
-                    <field name="direccion"/>
-                    <field name="caja"/>
                     <field name="vendedor"/>
+                    
+                    
+                    
                 </tree>
             </field>
         </record>
@@ -27,10 +27,9 @@
                             <group> 
                                 <field name="cliente"/>
                                 <field name="fecha"/>
-                                <field name="sucursal"/>
-                                <field name="direccion"/>
-                                <field name="caja"/>
                                 <field name="vendedor"/>
+                                
+                                
                             </group>
                         </sheet>      
                         </form> 
